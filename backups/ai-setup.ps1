@@ -19,19 +19,22 @@ $settings = @{
 $settings | Out-File -FilePath "$claudeDir\settings.json" -Encoding utf8 -Force
 Write-Host "OK: 토큰 및 성능 최적화 설정 완료." -ForegroundColor Green
 
-# 2. 마스터 지능 이식
+# 2. 현재 스크립트 실행 위치(리포지토리 주소) 자동 추적
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Split-Path -Parent $scriptDir # backups 폴더의 상위 폴더(AI_Settings)
+
+# 3. 마스터 지능 이식
 $rulePath = "$claudeDir\rules"
 if (-not (Test-Path $rulePath)) { New-Item -ItemType Directory -Force -Path $rulePath | Out-Null }
 
 $masterRules = @"
 # AI_Agent Master Rules (v2.1 Master Full)
 ---
----
 > **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **AI_Agent Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
 ---
 
 ## ▣ [ABSOLUTE DIRECTIVE (최상위 절대 지침)]
-- AI는 앞으로 어떤 프로젝트를 진행하든 간에, 반드시 사용자 컴퓨터의 `AI_Settings/ECC_Library` 리포지토리를 최우선으로 탐색하고 참고해야 한다. (기본 위치: C:\Users\LYH\.gemini\antigravity\scratch\AI_Settings)
+- AI는 앞으로 어떤 프로젝트를 진행하든 간에, 반드시 사용자 컴퓨터의 `AI_Settings/ECC_Library` 리포지토리를 최우선으로 탐색하고 참고해야 한다. (동적 창고 위치 추적됨: $repoRoot)
 - 사용자가 단순히 "아이폰 앱 만들어줘", "리액트 세팅해줘" 라고만 말해도, AI는 알아서 해당 창고에 있는 언어별 최적화 룰셋(Swift, React 등)을 스스로 가져와 현재 프로젝트에 적용한 뒤 작업을 시작해야 한다.
 
 ## ▣ RESPONSE FORMAT RULE (CRITICAL)
