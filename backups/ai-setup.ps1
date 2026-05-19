@@ -4,7 +4,7 @@
 # Progress Bar 비활성화 (한국어 출력 겹침 버그 방지)
 $ProgressPreference = 'SilentlyContinue'
 
-Write-Host "`n>>> AI_Setup 리드 엔지니어 환경 구축을 시작합니다..." -ForegroundColor Cyan
+Write-Host "`n>>> AI_Setup 환경 구축을 시작합니다..." -ForegroundColor Cyan
 
 # 1. 글로벌 설정 디렉토리 및 최적화 설정
 $claudeDir = "$HOME\.claude"; if (-not (Test-Path $claudeDir)) { New-Item -ItemType Directory -Force -Path $claudeDir | Out-Null }
