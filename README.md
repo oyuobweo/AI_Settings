@@ -1,43 +1,48 @@
-﻿# 🚀 AI_Agent Configuration
+# 🚀 AI_Agent (AI 수석개발자) 통합 룰셋 보관소
 
-> **AI_Agent Agent**: AI_Agent v2.1 (AI_Agent)
-> **Status**: Optimized for Remote Collaboration (Multi-PC Sync Ready)
+이 리포지토리는 개발 초보자부터 전문가까지 누구나 **최고 품질의 코드를 짤 수 있게 도와주는 "AI 코딩 규칙서(ECC)"와 자동 설정 스크립트**를 보관하는 통합 마스터 창고입니다. 
+아래 가이드만 순서대로 따라 하시면, AI가 10년 차 수석 개발자처럼 완벽한 코드를 짜도록 만들 수 있습니다!
 
 ---
 
-## ▣ 리포지토리 개요
-본 리포지토리는 **AI_Agent** AI 에이전트의 구동 및 운영을 위한 핵심 설정 자료와 자동화 스크립트를 관리하는 전용 공간입니다.
+## 📖 1단계: 초보자를 위한 초간단 사용법 (규칙서 복사하기)
 
-- **목적**: 개발 프로젝트 소스코드와 독립된 AI 에이전트 환경 및 룰셋 통합 관리
-- **Architecture**: AI_Setup v2.1 기준 설계
+AI에게 "웹사이트 만들어줘"라고 그냥 말하면 옛날 방식을 쓰거나 오류가 많은 코드를 줍니다. 
+하지만 이 **"규칙서(잔소리 목록)"**를 프로젝트 폴더에 넣어주면, AI가 코딩할 때 절대 실수하지 않고 최신 트렌드를 따르게 됩니다. 
+(※ AI가 파일을 알아서 자동으로 읽으므로, 매번 읽으라고 지시할 필요가 전혀 없습니다!)
 
-## ▣ 시스템 핵심 지침 (Agent Rules)
-AI 에이전트가 작업을 수행할 때 최우선으로 준수해야 하는 규정들이 보관되어 있습니다.
+**적용 방법 (복사 + 붙여넣기)**
+1. 개발을 진행할 실제 내 프로젝트 폴더 안에 `.claude` 라는 이름의 폴더를 만듭니다. (점 하나로 시작)
+2. 그 안에 `rules` 라는 폴더를 만듭니다. (최종 경로: `내프로젝트/.claude/rules/`)
+3. 지금 보고 계시는 이 깃허브 창고의 **`ECC_Library`** 폴더에 들어갑니다.
+   - `1_공통_핵심규칙/`
+   - `2_웹프론트엔드/`
+   - `3_파이썬/`
+   - `4_백엔드/`
+   - `5_기타_전체언어팩/` (C++, C#, Rust, Swift, PHP 등 세상의 모든 언어 보관)
+4. 본인이 개발에 **사용할 언어 폴더에 들어가서 규칙 파일(.md)들을 전부 복사**합니다. (예: 리액트로 웹을 만든다면 1번과 2번 폴더 내용을 복사)
+5. 아까 만든 내 프로젝트의 `.claude/rules/` 폴더 안에 **붙여넣기** 하면 끝입니다!
 
-- **마스터 지침**: [.claude/rules/PROJECT_RULES.md](.claude/rules/PROJECT_RULES.md) (AI_Agent v2.1)
-- **기술 표준**: [.claude/rules/ENGINEERING_STANDARDS.md](.claude/rules/ENGINEERING_STANDARDS.md) (Coding Standards)
-- **웹 패턴**: [.claude/rules/WEB_BEST_PRACTICES.md](.claude/rules/WEB_BEST_PRACTICES.md) (Web Patterns)
+---
 
-## ▣ 폴더 구조 가이드
-- `.claude/rules/`: AI 에이전트 핵심 행동 지침서 및 코딩 표준 규약
-- `docs/`: 
-  - `GETTING_STARTED.md`: AI 세팅 및 동기화 퀵 스타트 가이드
-  - `plans/`: 작업(Task) 설계 및 히스토리 보관
-- `backups/`: AI_Setup AI 시스템 환경 구축 및 보안 스캔을 위한 유틸리티 스크립트 모음 (`AI_Setup-setup.ps1` 등)
+## 🛠️ 2단계: AI 마스터 지능 셋업 (고급자용 자동화 스크립트)
 
-## ▣ 퀵 스타트 (Quick Start)
-새로운 개발 프로젝트 환경에 본 AI 에이전트 설정(지능)을 동기화하기 위한 최초 1회 실행 단계입니다.
+규칙서를 복사하는 것 외에, 내 컴퓨터 전체의 AI 성능을 극대화하고 "AI_Agent 마스터 규칙"을 글로벌 환경에 이식하고 싶다면 아래 스크립트를 최초 1회만 실행하세요.
 
-1. 리포지토리 클론 및 `git pull` (최신 동기화)
-2. 터미널(관리자 권한)에서 셋업 스크립트 실행:
+**셋업 스크립트 실행 방법**
+1. 이 `AI_Settings` 리포지토리를 내 컴퓨터로 클론(`git clone`) 받습니다.
+2. 터미널(PowerShell)을 관리자 권한으로 열고 클론받은 폴더로 이동합니다.
+3. 아래 스크립트를 실행합니다.
 ```powershell
-.\backups\AI_Setup-setup.ps1
+.\backups\ai-setup.ps1
 ```
-
-> **상세 가이드**: [시작하기 가이드 (GETTING_STARTED.md)](docs/GETTING_STARTED.md)
+*이 스크립트는 AI의 사고력(Token limit)을 최대치로 높이고, 기본적인 시스템 핵심 마스터 룰을 내 컴퓨터에 자동 설치해 줍니다.*
 
 ---
-Copyright © 2026 AI_Agent Edition.
 
+## 💡 꿀팁: AI 100% 활용하기
+AI에게 파일 생성이나 수정을 요청할 때 복잡한 프로젝트 규칙을 일일이 말할 필요가 없습니다. 
+- 코딩 리뷰 요청 예시: *"현재 프로젝트의 기술 표준(coding-style.md)에 맞춰 이 코드를 다시 검토해 줘"*
+- 아키텍처 설계 요청 예시: *"우리가 세팅한 디자인 패턴(patterns.md) 룰에 따라 컴포넌트를 분리해 줘"*
 
-
+Copyright © 2026 Antigravity Lead Engineer Edition.
