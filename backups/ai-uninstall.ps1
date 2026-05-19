@@ -1,7 +1,7 @@
-﻿# [AI_Setup] v2.1 삭제 및 초기화 스크립트 (Windows PowerShell)
-# 이 스크립트는 로컬 컴퓨터의 하모니 에이전트 환경을 완전히 제거합니다.
+# [AI_Setup] v2.1 삭제 및 초기화 스크립트 (Windows PowerShell)
+# 이 스크립트는 로컬 컴퓨터의 하모니 AI_Agent 환경을 완전히 제거합니다.
 
-Write-Host "`n>>> AI_Setup 에이전트 환경 완전 삭제를 시작합니다..." -ForegroundColor Yellow
+Write-Host "`n>>> AI_Setup AI_Agent 환경 완전 삭제를 시작합니다..." -ForegroundColor Yellow
 
 # 1. 글로벌 설정 폴더 삭제 (~/.claude)
 $claudeDir = "$HOME\.claude"
