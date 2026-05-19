@@ -30,7 +30,7 @@ if (-not (Test-Path $rulePath)) { New-Item -ItemType Directory -Force -Path $rul
 $masterRules = @"
 # AI_Agent Master Rules (v2.1 Master Full)
 ---
-> **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **AI_Agent Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
+> **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **AI_Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
 ---
 
 ## ▣ [ABSOLUTE DIRECTIVE (최상위 절대 지침)]
