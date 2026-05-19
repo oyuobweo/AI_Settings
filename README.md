@@ -1,12 +1,12 @@
-﻿# 🚀 AI_Agent (AI_수석개발자) Configuration
+﻿# 🚀 AI_Agent Configuration
 
-> **AI_수석개발자 Agent**: AI_Agent v2.1 (AI_Agent)
+> **AI_Agent Agent**: AI_Agent v2.1 (AI_Agent)
 > **Status**: Optimized for Remote Collaboration (Multi-PC Sync Ready)
 
 ---
 
 ## ▣ 리포지토리 개요
-본 리포지토리는 **AI_수석개발자 (AI_Agent)** AI 에이전트의 구동 및 운영을 위한 핵심 설정 자료와 자동화 스크립트를 관리하는 전용 공간입니다.
+본 리포지토리는 **AI_Agent** AI 에이전트의 구동 및 운영을 위한 핵심 설정 자료와 자동화 스크립트를 관리하는 전용 공간입니다.
 
 - **목적**: 개발 프로젝트 소스코드와 독립된 AI 에이전트 환경 및 룰셋 통합 관리
 - **Architecture**: AI_Setup v2.1 기준 설계
@@ -37,5 +37,7 @@ AI 에이전트가 작업을 수행할 때 최우선으로 준수해야 하는 �
 > **상세 가이드**: [시작하기 가이드 (GETTING_STARTED.md)](docs/GETTING_STARTED.md)
 
 ---
-Copyright © 2026 AI_수석개발자 Edition.
+Copyright © 2026 AI_Agent Edition.
+
+
 

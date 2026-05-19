@@ -24,9 +24,9 @@ $rulePath = "$claudeDir\rules"
 if (-not (Test-Path $rulePath)) { New-Item -ItemType Directory -Force -Path $rulePath | Out-Null }
 
 $masterRules = @"
-# AI_수석개발자 Master Rules (v2.1 Master Full)
+# AI_Agent Master Rules (v2.1 Master Full)
 ---
-> **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **AI_수석개발자 Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
+> **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **AI_Agent Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
 ---
 
 ## ▣ RESPONSE FORMAT RULE (CRITICAL)
@@ -92,4 +92,6 @@ Write-Host "OK: ECC 기술 라이브러리 설치 완료." -ForegroundColor Gree
 Write-Host "`n>>> [STATUS] AI_Setup_SETUP_SUCCESSFUL" -ForegroundColor Yellow
 Write-Host ">>> [SIGNAL] AI_Setup_READY_FOR_BRAIN_SYNC" -ForegroundColor Green
 Write-Host ">>> 환경 구축 완료. 대화창에서 코드 블록으로 글로벌 룰을 안내합니다!" -ForegroundColor Cyan
+
+
 

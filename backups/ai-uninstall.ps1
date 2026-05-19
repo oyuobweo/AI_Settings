@@ -18,3 +18,5 @@ Write-Host "1. 안티그래비티 설정 창의 '+ Global'에 있는 모든 룰 
 Write-Host "2. 'AI_Setup-setup.ps1', 'scan.ps1'과 같은 파일들도 필요 없다면 수동으로 삭제하세요."
 Write-Host "3. 이제 안티그래비티는 초기 상태('일반 AI 모드')로 돌아갑니다." -ForegroundColor Cyan
 
+
+

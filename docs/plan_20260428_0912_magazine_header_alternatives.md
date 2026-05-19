@@ -67,3 +67,5 @@ const MagazineHeader = ({ date, variant = 'classic' }) => {
 - **Fallback**: 기본 'classic' 레이아웃을 항상 유지하고, CSS만으로 스타일 전환 유도.
 - **Improvement**: 향후 설정 메뉴에서 사용자가 직접 헤더 스타일을 선택할 수 있도록 연동 가능.
 
+
+

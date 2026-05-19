@@ -30,3 +30,5 @@
 - **Risk**: 일부 로컬 캐시(`.vite`, `node_modules/.cache`) 등에 이전 경로가 남아 있을 수 있으나, 이는 다음 빌드 시 자동 갱신되므로 크리티컬하지 않음.
 - **Fallback**: 빌드 오류 시 `node_modules` 재설치(`npm ci`) 권고.
 
+
+
