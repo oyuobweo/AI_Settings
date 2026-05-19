@@ -1,4 +1,4 @@
-﻿# [AI_Setup] v2.1 궁극의 통합 셋업 (Final Confirmed Version)
+# [AI_Setup] v2.1 궁극의 통합 셋업 (Final Confirmed Version)
 # 셋업 완료 후 AI가 ```markdown 코드 블록 안에 날것 마크다운 원본을 그대로 출력합니다.
 
 # Progress Bar 비활성화 (한국어 출력 겹침 버그 방지)
@@ -81,13 +81,9 @@ $masterRules = @"
 $masterRules | Out-File -FilePath "$rulePath\master.md" -Encoding utf8 -Force
 Write-Host "OK: 마스터 지능 이식 완료." -ForegroundColor Green
 
-# 3. ECC 글로벌 기술 라이브러리 설치
-Write-Host ">>> ECC 글로벌 기술 룰 라이브러리 설치 중..." -ForegroundColor Cyan
-Invoke-WebRequest -Uri "https://github.com/affaan-m/everything-claude-code/archive/refs/heads/main.zip" -OutFile "$claudeDir\ecc.zip"
-Expand-Archive -Path "$claudeDir\ecc.zip" -DestinationPath "$claudeDir\temp" -Force
-Copy-Item -Path "$claudeDir\temp\everything-claude-code-main\rules\*" -Destination "$rulePath" -Recurse -Force
-Remove-Item -Path "$claudeDir\ecc.zip", "$claudeDir\temp" -Recurse -Force
-Write-Host "OK: ECC 기술 라이브러리 설치 완료." -ForegroundColor Green
+# 3. ECC 가이드 안내
+Write-Host "OK: AI_Agent 마스터 규칙 세팅이 완료되었습니다." -ForegroundColor Green
+Write-Host ">>> 더 세밀한 언어별 규칙(React, Python 등)은 AI_Settings/ECC_Library/ 폴더를 참고하여 복사해주세요." -ForegroundColor Yellow
 
 Write-Host "`n>>> [STATUS] AI_Setup_SETUP_SUCCESSFUL" -ForegroundColor Yellow
 Write-Host ">>> [SIGNAL] AI_Setup_READY_FOR_BRAIN_SYNC" -ForegroundColor Green
