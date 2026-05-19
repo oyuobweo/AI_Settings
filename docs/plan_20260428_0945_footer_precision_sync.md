@@ -1,4 +1,4 @@
-# Implementation Plan - Footer UI Precision Alignment & Hover Synchronization (v1.7)
+﻿# Implementation Plan - Footer UI Precision Alignment & Hover Synchronization (v1.7)
 
 ## 1) Problem Summary
 하단 푸터의 '+' 아이콘과 '등록' 텍스트 간의 미세한 수직 정렬 불일치를 해결하고, 시계 아이콘과 등록 버튼의 호버 효과(배경색, 컬러 전환, 애니메이션 속도)를 완전히 일치시켜 시각적 완성도를 극대화함.
@@ -37,3 +37,4 @@
 ## 5) Self Code Review
 - **핵심**: 아이콘은 기하학적 중앙을 기준으로 렌더링되지만, 글자는 베이스라인 기준이므로 `align-items: center`만으로는 1~2px의 오차가 발생할 수 있음. 이를 수동으로 보정하는 것이 핵심임.
 - **결과**: 작은 버튼 하나에서도 '설계된 디자인'이라는 인상을 주게 됨.
+

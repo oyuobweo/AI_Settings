@@ -1,4 +1,4 @@
-# Implementation Plan - Magazine Header Date Color Synchronization (v1.4)
+﻿# Implementation Plan - Magazine Header Date Color Synchronization (v1.4)
 
 ## 1) Problem Summary
 매거진 헤더의 날짜 숫자(`mag-date-big`) 색상이 현재 일반 텍스트 색상(`var(--text-main)`)으로 설정되어 있으나, 이를 월(`mag-month`)과 동일한 강조 색상(`var(--primary)`)으로 변경하여 브랜드 아이덴티티를 강화함.
@@ -25,3 +25,4 @@
 ## 5) Self Code Review
 - **효과**: 주요 날짜 정보에 대한 시각적 주목도가 상승함.
 - **리스크**: 배경색에 따라 가독성이 달라질 수 있으나, 기존 `mag-month`에서 검증된 컬러이므로 안정적임.
+

@@ -1,4 +1,4 @@
-# Implementation Plan - Magazine Header Pixel-Perfect Alignment (v1.1)
+﻿# Implementation Plan - Magazine Header Pixel-Perfect Alignment (v1.1)
 
 ## 1) Problem Summary
 매거진 헤더의 각 텍스트 영역(날짜 숫자, 월, 요일)이 레이아웃에 따라 시각적으로 완벽하게 정렬되지 않을 수 있으므로, 각 요소별로 독립적인 위치 및 간격 조절(Fine-tuning)이 가능한 구조를 구축하여 '픽셀 퍼펙트'한 완성도를 추구함.
@@ -38,3 +38,4 @@ CSS 변수를 통해 각 레이아웃 Variant 내에서도 개별 글자 영역�
 - **장점**: 코드 수정 없이 CSS 변수값만 변경하여 모든 레이아웃의 정렬을 완벽하게 맞출 수 있음.
 - **리스크**: 폰트가 변경될 경우 오프셋 값을 재조정해야 할 수 있음.
 - **해결**: 글로벌 테마 변수와 연동하여 폰트셋별 사전 정의된 오프셋 제공 고려.
+

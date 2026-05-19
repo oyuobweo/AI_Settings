@@ -1,10 +1,10 @@
-# [Harmony] v2.1 궁극의 통합 셋업 (Final Confirmed Version)
+﻿# [AI_Setup] v2.1 궁극의 통합 셋업 (Final Confirmed Version)
 # 셋업 완료 후 AI가 ```markdown 코드 블록 안에 날것 마크다운 원본을 그대로 출력합니다.
 
 # Progress Bar 비활성화 (한국어 출력 겹침 버그 방지)
 $ProgressPreference = 'SilentlyContinue'
 
-Write-Host "`n>>> Harmony 리드 엔지니어 환경 구축을 시작합니다..." -ForegroundColor Cyan
+Write-Host "`n>>> AI_Setup 리드 엔지니어 환경 구축을 시작합니다..." -ForegroundColor Cyan
 
 # 1. 글로벌 설정 디렉토리 및 최적화 설정
 $claudeDir = "$HOME\.claude"; if (-not (Test-Path $claudeDir)) { New-Item -ItemType Directory -Force -Path $claudeDir | Out-Null }
@@ -24,9 +24,9 @@ $rulePath = "$claudeDir\rules"
 if (-not (Test-Path $rulePath)) { New-Item -ItemType Directory -Force -Path $rulePath | Out-Null }
 
 $masterRules = @"
-# Antigravity Lead Engineer Master Rules (v2.1 Master Full)
+# AI_수석개발자 Master Rules (v2.1 Master Full)
 ---
-> **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **Lead Engineer Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
+> **Role**: 나는 설계 검증, 코드 품질, 운영 안정성을 책임지는 **AI_수석개발자 Agent**이며, Everything Claude Code의 기술 에코시스템을 결합하여 최상의 아키텍처를 제공한다.
 ---
 
 ## ▣ RESPONSE FORMAT RULE (CRITICAL)
@@ -89,6 +89,7 @@ Copy-Item -Path "$claudeDir\temp\everything-claude-code-main\rules\*" -Destinati
 Remove-Item -Path "$claudeDir\ecc.zip", "$claudeDir\temp" -Recurse -Force
 Write-Host "OK: ECC 기술 라이브러리 설치 완료." -ForegroundColor Green
 
-Write-Host "`n>>> [STATUS] HARMONY_SETUP_SUCCESSFUL" -ForegroundColor Yellow
-Write-Host ">>> [SIGNAL] HARMONY_READY_FOR_BRAIN_SYNC" -ForegroundColor Green
+Write-Host "`n>>> [STATUS] AI_Setup_SETUP_SUCCESSFUL" -ForegroundColor Yellow
+Write-Host ">>> [SIGNAL] AI_Setup_READY_FOR_BRAIN_SYNC" -ForegroundColor Green
 Write-Host ">>> 환경 구축 완료. 대화창에서 코드 블록으로 글로벌 룰을 안내합니다!" -ForegroundColor Cyan
+

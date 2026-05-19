@@ -1,4 +1,4 @@
-# Implementation Plan - Footer Icon Spacing & Animation Sync (v2.0)
+﻿# Implementation Plan - Footer Icon Spacing & Animation Sync (v2.0)
 
 ## 1) Problem Summary
 푸터 하단의 시계 아이콘과 플러스 아이콘 사이의 간격을 절반(`6px`)으로 줄여 밀도를 높이고, 시계 아이콘에 적용된 호버 확대 효과를 플러스 버튼에도 동일하게 적용하여 두 아이콘의 인터렉션을 완벽히 일치시킴.
@@ -29,3 +29,4 @@
 ## 5) Self Code Review
 - **레이아웃**: `flex-start` 정렬을 유지하므로 시계 아이콘의 위치는 변하지 않고 플러스 버튼만 이동하는 의도가 정확히 구현됨.
 - **애니메이션**: `1.05` 정도의 미세한 확대는 레이아웃 흔들림 없이 고급스러운 느낌을 주기에 적합함.
+

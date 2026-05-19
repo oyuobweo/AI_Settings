@@ -1,4 +1,4 @@
-# Implementation Plan - Fixing Hover Scale Animation for Plus Button (v2.2)
+﻿# Implementation Plan - Fixing Hover Scale Animation for Plus Button (v2.2)
 
 ## 1) Problem Summary
 사이드보드 푸터의 플러스(`+`) 아이콘 버튼에 호버 확대(`scale`) 애니메이션이 적용되지 않는 현상을 수정함. 시계 아이콘과 완벽히 동일한 동역학적 피드백을 제공하기 위해 `transform` 관련 속성을 보강하고 렌더링 우선순위를 조정함.
@@ -30,3 +30,4 @@
 
 ## 5) Self Code Review
 - **원인 추정**: 일부 브라우저에서 `button` 요소에 `transform`을 적용할 때 기본 스타일과의 충돌이나 레이어 계산 문제로 애니메이션이 누락될 수 있음. `will-change`와 기본 `scale(1)` 명시가 이를 해결하는 표준 방법임.
+

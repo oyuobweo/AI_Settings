@@ -1,4 +1,4 @@
-# Implementation Plan - Click Outside to Close Dropdowns (v2.9)
+﻿# Implementation Plan - Click Outside to Close Dropdowns (v2.9)
 
 ## 1) Problem Summary
 - **과제**: 메타 패널(날짜/시간 선택)에서 드롭다운이나 캘린더가 열려있을 때, 해당 영역 외부를 클릭하면 열려있는 메뉴를 자동으로 닫히게 설정.
@@ -30,3 +30,4 @@
 ## 5) Self Code Review
 - **의도**: 모달이나 드롭다운 UI의 표준 패턴인 'Click Outside to Close'를 적용하여 완성도 향상.
 - **최적화**: 이벤트 리스너는 패널이 열려있을 때만 동작하도록 조건부 로직 적용 고려.
+

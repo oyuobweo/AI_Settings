@@ -1,4 +1,4 @@
-# Implementation Plan - Reverting Magazine Header Layout Alternatives (v1.3)
+﻿# Implementation Plan - Reverting Magazine Header Layout Alternatives (v1.3)
 
 ## 1) Problem Summary
 이전에 추가했던 매거진 헤더의 레이아웃 대안(Alt 1, 2, 3)들을 제거하고, 사이드보드를 단일 고정 헤더 레이아웃으로 복원함. 단, 미세 정렬을 위해 구축한 CSS 변수 시스템은 유지하여 완성도를 보존함.
@@ -32,3 +32,4 @@
 ## Self Code Review
 - **목적**: 불필요한 레이아웃 복잡도를 제거하고 핵심 기능(정렬)에 집중.
 - **결과**: 코드량이 감소하고 메인 레이아웃의 안정성 강화.
+

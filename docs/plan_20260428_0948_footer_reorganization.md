@@ -1,4 +1,4 @@
-# Implementation Plan - Minimal Footer Actions Reorganization (v1.8)
+﻿# Implementation Plan - Minimal Footer Actions Reorganization (v1.8)
 
 ## 1) Problem Summary
 입력 폼 하단의 '등록' 버튼에서 텍스트를 제거하고 플러스(`+`) 아이콘만 남긴 뒤, 이를 시계 아이콘 바로 옆으로 이동 배치함. 이를 통해 푸터 레이아웃을 더욱 미니멀하게 개선하고 주요 액션들을 한곳에 집중시킴.
@@ -32,3 +32,4 @@
 ## 5) Self Code Review
 - **핵심**: 텍스트가 사라지므로 아이콘만으로도 '등록' 기능임을 인지할 수 있도록 시각적 피드백(호버 시 컬러 변화 등)을 명확히 유지함.
 - **결과**: 푸터 영역의 여백이 넓어져 전체적인 가독성이 향상됨.
+

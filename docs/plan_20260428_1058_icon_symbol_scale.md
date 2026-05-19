@@ -1,4 +1,4 @@
-# Implementation Plan - Enhancing Icon Shape Scale Animation (v2.6)
+﻿# Implementation Plan - Enhancing Icon Shape Scale Animation (v2.6)
 
 ## 1) Problem Summary
 플러스(`+`) 버튼 호버 시 배경 프레임만 변하는 것처럼 느껴지는 문제를 해결하기 위해, 내부의 플러스 기호(SVG) 자체가 명확하게 확대되는 애니메이션을 추가함. 시계 아이콘과 플러스 아이콘 모두 내부 기호에 직접적인 확대 효과를 부여하여 시각적 피드백을 강화함.
@@ -31,3 +31,4 @@
 ## 5) Self Code Review
 - **의도**: 컨테이너만 커지는 것은 배경색 변화에 묻힐 수 있음. 내부 심볼을 직접 키워주면 '기능 버튼'으로서의 인지도가 극대화됨.
 - **결과**: 고품질 UI의 디테일한 애니메이션 감성을 확보.
+

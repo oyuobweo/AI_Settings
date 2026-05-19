@@ -1,4 +1,4 @@
-# Implementation Plan - Mutual Exclusion of Meta Selectors (v2.10)
+﻿# Implementation Plan - Mutual Exclusion of Meta Selectors (v2.10)
 
 ## 1) Problem Summary
 - **과제**: 타임 드롭다운 메뉴와 미니 캘린더가 동시에 열리는 겹침 현상을 방지. 하나가 열릴 때 다른 하나는 자동으로 닫히도록 배타적 선택(Mutual Exclusion) 로직 구현.
@@ -25,3 +25,4 @@
 ## 5) Self Code Review
 - **의도**: 좁은 모바일/사이드바 환경에서 레이어 겹침은 치명적인 UX 저하 요소임. 배타적 선택을 통해 이를 예방함.
 - **효율성**: 기존의 외부 클릭 닫기 로직과 결합되어 매우 견고한 UI 제어가 가능해짐.
+

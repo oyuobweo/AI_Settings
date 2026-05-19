@@ -1,4 +1,4 @@
-# Implementation Plan - Magazine Header Alignment Independence Fix (v1.2)
+﻿# Implementation Plan - Magazine Header Alignment Independence Fix (v1.2)
 
 ## 1) Problem Summary
 매거진 헤더에서 날짜(`date`)의 수직 위치를 변경할 때 요일(`day`)이 종속적으로 함께 움직이는 현상을 해결함. 각 요소가 서로의 레이아웃 박스에 영향을 주지 않고 픽셀 단위로 독립적으로 기동할 수 있도록 CSS 구조를 보강함.
@@ -34,3 +34,4 @@
 ## 5) Self Code Review
 - **핵심**: `transform`은 원래 레이아웃에 영향을 주지 않아야 함. 만약 움직인다면 그것은 '시각적 착시'이거나 부모 컨테이너가 자식의 가상 박스 크기에 반응하고 있는 것임.
 - **해결책**: 컨테이너 높이를 고정하거나, 모든 자식을 상단 정렬로 못박아 해결.
+

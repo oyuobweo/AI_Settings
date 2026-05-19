@@ -1,4 +1,4 @@
-# Implementation Plan - Re-synchronizing Footer Icon Hover Effects (v2.4)
+﻿# Implementation Plan - Re-synchronizing Footer Icon Hover Effects (v2.4)
 
 ## 1) Problem Summary
 플러스(`+`) 아이콘의 호버 애니메이션을 시계 아이콘과 완벽히 동일한 스타일로 다시 통일함. 이전 단계에서 제거했던 배경 하이라이트(프레임) 효과를 복구하고 확대 비율을 조정하여, 푸터 영역의 모든 액션 버튼이 일관된 사용자 경험을 제공하도록 함.
@@ -29,3 +29,4 @@
 ## 5) Self Code Review
 - **결정**: 디자인 일관성이 최우선이므로, 이전의 미니멀 스타일 실험을 종료하고 가장 안정적이고 통일감 있는 시계 아이콘 스타일로 전체를 통합함.
 - **결과**: 푸터 영역의 완성도가 다시 높아짐.
+

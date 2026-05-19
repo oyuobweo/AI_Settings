@@ -1,4 +1,4 @@
-# Implementation Plan - Magazine Header Layout Alternatives (v1.0)
+﻿# Implementation Plan - Magazine Header Layout Alternatives (v1.0)
 
 ## 1) Problem Summary
 현재 SideBoard의 '매거진 스타일 헤더'는 기본적인 수직 스택 구조를 가지고 있으나, 사용자에게 보다 다양한 시각적 경험과 프리미엄 감성을 제공하기 위해 여러 레이아웃 대안(Alternatives)을 제안하고 이를 선택 또는 순환할 수 있는 구조를 구축하고자 함.
@@ -66,3 +66,4 @@ const MagazineHeader = ({ date, variant = 'classic' }) => {
 - **Risk**: 너무 복잡한 레이아웃은 가독성을 해칠 수 있음.
 - **Fallback**: 기본 'classic' 레이아웃을 항상 유지하고, CSS만으로 스타일 전환 유도.
 - **Improvement**: 향후 설정 메뉴에서 사용자가 직접 헤더 스타일을 선택할 수 있도록 연동 가능.
+

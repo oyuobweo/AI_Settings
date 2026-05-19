@@ -1,4 +1,4 @@
-# Implementation Plan - Minimal Plus Icon Hover Refinement (v2.3)
+﻿# Implementation Plan - Minimal Plus Icon Hover Refinement (v2.3)
 
 ## 1) Problem Summary
 플러스(`+`) 버튼의 호버 효과에서 배경색(프레임) 변화를 제거하고, 아이콘 자체의 확대와 색상 전환에만 집중하도록 수정함. 시계 아이콘은 기존의 배경 하이라이트 방식을 유지하여 두 버튼 간의 시각적 차별화를 둠.
@@ -33,3 +33,4 @@
 ## 5) Self Code Review
 - **의도**: 플러스 아이콘은 '추가/등록'의 의미를 가지므로 기호 자체가 커지는 것이 더 직관적일 수 있음.
 - **결과**: 두 액션 버튼이 서로 다른 개성을 가지면서도 조화를 이루는 푸터 디자인 완성.
+

@@ -1,4 +1,4 @@
-# Implementation Plan - Balancing Visual Weight of Footer Icons (v2.7)
+﻿# Implementation Plan - Balancing Visual Weight of Footer Icons (v2.7)
 
 ## 1) Problem Summary
 시계 아이콘에 비해 플러스(`+`) 아이콘의 확대 효과가 덜 눈에 띄는 현상을 구조적/시각적 분석을 통해 해결함. `button` 태그의 렌더링 특성을 보정하고, 선이 얇은 플러스 아이콘의 시각적 무게감을 보완하기 위해 확대 비율과 선 두께(`stroke-width`)를 추가로 상향 조정함.
@@ -26,3 +26,4 @@
 
 ## 5) Self Code Review
 - **원인**: 시계는 원형(Circle) 베이스라 면적이 넓어 확대가 잘 보이지만, 플러스는 얇은 선(Cross) 형태라 같은 비율로 키워도 면적 변화가 작음. 이를 '비율 상향'으로 해결하는 것이 정석임.
+

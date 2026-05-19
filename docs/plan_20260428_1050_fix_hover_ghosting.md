@@ -1,4 +1,4 @@
-# Implementation Plan - Fixing Footer Hover Ghosting & Style Resync (v2.5)
+﻿# Implementation Plan - Fixing Footer Hover Ghosting & Style Resync (v2.5)
 
 ## 1) Problem Summary
 플러스(`+`) 아이콘 호버 시 시계 아이콘이 반응하는 간섭 현상(Ghosting)을 해결하고, 플러스 아이콘의 호버 효과를 시계 아이콘과 완벽히 동일한 방식(배경 하이라이트 + 보라색 + 확대)으로 재구현함. 
@@ -34,3 +34,4 @@
 
 ## 5) Self Code Review
 - **원인 분석**: 그룹화된 CSS 선택자 자체의 문제는 아니나, 레이아웃 상의 미세한 겹침이나 브라우저의 렌더링 최적화 과정에서 타겟팅 오차가 발생한 것으로 보임. 개별 정의와 영역 명시를 통해 이를 해결함.
+

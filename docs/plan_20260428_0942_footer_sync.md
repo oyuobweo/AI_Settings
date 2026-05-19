@@ -1,4 +1,4 @@
-# Implementation Plan - Footer UI Alignment & Hover Consistency (v1.6)
+﻿# Implementation Plan - Footer UI Alignment & Hover Consistency (v1.6)
 
 ## 1) Problem Summary
 사이드보드 입력 폼 푸터에 위치한 시계 아이콘과 '등록' 버튼의 수직 정렬을 완벽히 맞추고, 두 요소의 호버(Hover) 시각적 피드백을 동일하게 통일하여 UI의 일관성과 완성도를 높임.
@@ -38,3 +38,4 @@
 ## Self Code Review
 - **핵심**: '등록' 버튼은 텍스트가 포함되어 있으므로, 아이콘만 있는 시계 버튼과 시각적 무게감을 맞추기 위해 좌우 패딩을 조절하는 것이 중요함.
 - **확장성**: 추후 다른 액션 버튼이 추가되더라도 동일한 클래스나 믹스인을 적용할 수 있는 기반 마련.
+

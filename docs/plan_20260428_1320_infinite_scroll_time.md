@@ -1,4 +1,4 @@
-# Implementation Plan - Infinite Scroll Time Dropdown (v2.8)
+﻿# Implementation Plan - Infinite Scroll Time Dropdown (v2.8)
 
 ## 1) Problem Summary
 - **과제**: 타임 드롭다운 리스트가 끝에 도달했을 때 멈추지 않고, 무한히 반복(Infinite Loop)되어 회전하는 효과 구현.
@@ -32,3 +32,4 @@
 ## 5) Self Code Review
 - **의도**: 24시간 목록이 길기 때문에 끝에 도달했을 때 다시 위로 올라가야 하는 번거로움을 제거하여 사용성을 극대화함.
 - **주의**: 스크롤 이벤트가 빈번하게 발생하므로 `requestAnimationFrame` 또는 효율적인 조건문으로 성능 저하 방지.
+

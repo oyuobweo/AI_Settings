@@ -1,4 +1,4 @@
-# Implementation Plan - Entry Card Spacing Consistency (v1.5)
+﻿# Implementation Plan - Entry Card Spacing Consistency (v1.5)
 
 ## 1) Problem Summary
 사이드보드 입력 영역에서 메모장-시계 아이콘 간격과 시계 아이콘-메타 패널 간격이 서로 달라 발생하는 시각적 불균형을 해결함. 두 간격을 동일한 수치로 조정하여 레이아웃의 일관성과 심미성을 높임.
@@ -32,3 +32,4 @@
 ## 5) Self Code Review
 - **효과**: 작은 간격의 차이가 전체적인 '완성도'를 결정함. 이번 수정을 통해 프리미엄 UI의 디테일을 강화.
 - **주의**: `entry-card` 자체의 `gap` 속성과 개별 요소의 `margin/padding`이 중첩되지 않도록 계산에 유의.
+
