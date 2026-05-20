@@ -1,10 +1,10 @@
-# [AI_Setup] v2.1 궁극의 통합 셋업 (Final Confirmed Version)
-# 셋업 완료 후 AI가 아름다운 마스터 룰셋을 렌더링합니다.
+# [AI_Setup] v2.2 초지능형 자동 클론 & 통합 셋업 (Final Ultimate Edition)
+# 셋업 파일 단독 실행 시 자동으로 깃허브에서 리포지토리를 클론 및 최신화합니다.
 
 # Progress Bar 비활성화 (한국어 출력 겹침 버그 방지)
 $ProgressPreference = 'SilentlyContinue'
 
-Write-Host "`n>>> AI_Setup 환경 구축을 시작합니다..." -ForegroundColor Cyan
+Write-Host "`n>>> AI_Setup 환경 구축 및 원격 클론 설정을 시작합니다..." -ForegroundColor Cyan
 
 # 1. 글로벌 설정 디렉토리 및 최적화 설정
 $claudeDir = "$HOME\.claude"; if (-not (Test-Path $claudeDir)) { New-Item -ItemType Directory -Force -Path $claudeDir | Out-Null }
@@ -19,9 +19,36 @@ $settings = @{
 $settings | Out-File -FilePath "$claudeDir\settings.json" -Encoding utf8 -Force
 Write-Host "OK: 토큰 및 성능 최적화 설정 완료." -ForegroundColor Green
 
-# 2. 현재 스크립트 실행 위치(리포지토리 주소) 자동 추적
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$repoRoot = $scriptDir # 스크립트가 최상위 루트에 있으므로 scriptDir가 곧 repoRoot(AI_Settings)입니다.
+# 2. 리포지토리 자동 클론 및 최신화 감지 (Zero-Touch 웜홀 셋업)
+$targetScratchDir = "$HOME\.gemini\antigravity\scratch"
+if (-not (Test-Path $targetScratchDir)) { New-Item -ItemType Directory -Force -Path $targetScratchDir | Out-Null }
+
+$repoRoot = "$targetScratchDir\AI_Settings"
+$repoUrl = "https://github.com/oyuobweo/AI_Settings.git"
+
+if (-not (Test-Path "$repoRoot\.git")) {
+    Write-Host ">>> 로컬에 AI_Settings 리포지토리가 감지되지 않았습니다." -ForegroundColor Yellow
+    Write-Host ">>> GitHub 원격 저장소로부터 100% 자동 클론 설정을 시작합니다..." -ForegroundColor Cyan
+    
+    if (Get-Command git -ErrorAction SilentlyContinue) {
+        git clone $repoUrl $repoRoot
+        if ($LASTEXITCODE -eq 0) {
+            Write-Host "OK: AI_Settings 원격 리포지토리 자동 클론 성공!" -ForegroundColor Green
+        } else {
+            Write-Warning "FAIL: git clone 중 오류가 발생했습니다. 권한이나 인터넷 상태를 확인해 주세요."
+        }
+    } else {
+        Write-Warning "FAIL: 시스템에 git이 설치되어 있지 않습니다. git을 먼저 설치해 주셔야 자동 클론이 가능합니다."
+    }
+} else {
+    Write-Host ">>> 이미 AI_Settings 리포지토리가 존재합니다. 최신 업데이트를 동기화(Pull)합니다..." -ForegroundColor Cyan
+    if (Get-Command git -ErrorAction SilentlyContinue) {
+        Push-Location $repoRoot
+        git pull
+        Pop-Location
+        Write-Host "OK: 최신 업데이트 동기화 완료." -ForegroundColor Green
+    }
+}
 
 # 3. 마스터 지능 이식
 $rulePath = "$claudeDir\rules"
@@ -96,11 +123,12 @@ $masterRules = @'
 | **`/browser`** | 최신 공식 라이브러리 스펙이나 웹 정보 크롤링이 필요할 때 | 실시간 웹 서치 및 타깃 사이트 문서 정밀 분석 수행 |
 '@ -replace '\$repoRoot', $repoRoot
 
+# 룰셋 파일에 실제 파싱된 리포지토리 경로 기입 및 이식
 $masterRules | Out-File -FilePath "$rulePath\master.md" -Encoding utf8 -Force
 Write-Host "OK: 마스터 지능 이식 완료." -ForegroundColor Green
 
-# 3. ECC 가이드 안내
-Write-Host "OK: AI_Agent 마스터 규칙 세팅이 완료되었습니다." -ForegroundColor Green
+# 4. ECC 가이드 안내
+Write-Host "OK: AI_Agent 마스터 규칙 세팅 및 동기화가 모두 완료되었습니다." -ForegroundColor Green
 Write-Host ">>> 더 세밀한 언어별 규칙(React, Python 등)은 AI_Settings/ECC_Library/ 폴더를 참고하여 복사해주세요." -ForegroundColor Yellow
 
 Write-Host "`n>>> [STATUS] AI_Setup_SETUP_SUCCESSFUL" -ForegroundColor Yellow
